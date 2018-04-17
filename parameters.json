@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualMachineName": {
+            "value": "openshiftdevdemo"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D4s_v3"
+        },
+        "adminUsername": {
+            "value": "centos"
+        },
+        "virtualNetworkName": {
+            "value": "openshiftdev-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "openshiftdevdemo342"
+        },
+        "diskSizeGB": {
+            "value": "32"
+        },
+        "networkSecurityGroupName": {
+            "value": "openshiftdevdemo-nsg"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9FXQ/L9mjHg35LEN2GFlgIwAg4JtMMvejd3RAd2KeDgCfPOPYYW7D7oDvismVf4WAd8bQbeEOIVMHv7D2oOAofM14KUvIkuQ/rT/bmzKI2qx/qtnsKsrFCblCWU+5Fo4gyZXF2Dww1WTgunlC1RJsug1GYaMavNmrymuEPtsw/4eEMa8BEDlg9TTarolaGqjBK3Q6Gq8+oBw4knQE67axz1opykCAQtYl8fJOMKPPM9Y7WBOiS10EJw3EKRbDoUf0rRJuIfXD865tf5R0qzWpcdbqwPP7a0ht1UN+86+XeNi/VazC2N2DuRNWSQZH5UBP0QVDjIDkOIEiR1iTjqe3"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "glusterfsdiag254"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/44c891bd-f610-4e4c-a6b9-8f0e586405a1/resourceGroups/glusterfs/providers/Microsoft.Storage/storageAccounts/glusterfsdiag254"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "publicIpAddressName": {
+            "value": "openshiftdevdemo-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "17:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "Eastern Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Disabled"
+        }
+    }
+}
